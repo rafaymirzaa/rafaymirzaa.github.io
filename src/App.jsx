@@ -46,6 +46,8 @@ const socialLinks = [
   { label: 'Gmail', href: 'mailto:mirzaaravi@gmail.com', Icon: GmailLogo },
 ]
 
+const cvUrl = `${import.meta.env.BASE_URL}Rafay_Mirza_CV.pdf`
+
 const stats = [
   { value: '21', label: 'Age' },
   { value: '2', label: 'Years of independent projects' },
@@ -198,7 +200,7 @@ function App() {
             </p>
 
             <div className="hero-actions">
-              <a className="cv-button" href="/Rafay_Mirza_CV.pdf" download>
+              <a className="cv-button" href={cvUrl} download="Rafay_Mirza_CV.pdf">
                 View CV
                 <Download size={18} />
               </a>
